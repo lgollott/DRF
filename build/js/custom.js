@@ -2184,16 +2184,21 @@ if (typeof NProgress != 'undefined') {
 			  var mybarChart = new Chart(ctx, {
 				type: 'bar',
 				data: {
-				  labels: ["January", "February", "March", "April", "May", "June", "July"],
+				  labels: ["02/12/18", "02/19/18", "02/26/18", "03/05/2018", "03/12/18", "03/19/2018"],
 				  datasets: [{
-					label: '# of Votes',
+					label: 'Shawna',
 					backgroundColor: "#26B99A",
-					data: [51, 30, 40, 28, 92, 50, 45]
+					data: [5, 13, 4, 7, 9, 5]
 				  }, {
-					label: '# of Votes',
+					label: 'Mimi',
 					backgroundColor: "#03586A",
-					data: [41, 56, 25, 48, 72, 34, 12]
-				  }]
+					data: [7, 3, 7, 8, 7, 7]
+				  },{
+                      label: 'Andrea',
+                      backgroundColor: "#538FF1",
+                      data: [6, 12, 5, 7, 2, 10]
+                  }
+                            ]
 				},
 
 				options: {
