@@ -12,7 +12,7 @@
       
 	<link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>Discovery Request | </title>
+    <title>DRL | </title>
 
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
@@ -40,7 +40,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Discovery Request Live</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Dicovery Request Live</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -75,11 +75,12 @@
                         <li><a href="task_detail.html">Tasks Detail</a></li>
                     </ul>
                   </li>
-!--
-                    <li><a><i class="fa fa-edit"></i> External <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="jotform.html">JotForm</a></li>
+                    <li><a><i class="fa fa-edit"></i> Plug-ins <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu"> 
+                        <li><a href="altep.html">Altep</a></li>
                         <li><a href="box.html"> Box</a></li>
+                        <li><a href="jotform.html">JotForm</a></li>
+                        <li><a href="passport.html">Passport</a></li>
                     </ul>
                   </li>
 
@@ -140,42 +141,6 @@
                     <span class="badge bg-green">6</span>
                   </a>
                   <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
-                    <li>
-                      <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
                     <li>
                       <a>
                         <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
@@ -263,10 +228,11 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="col-md-12 col-sm-12 col-xs-12">
+<!-- start request bar chart -->
+                <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
+                      
                     <h2>Weekly Request Completed</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
@@ -283,18 +249,22 @@
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
                       </li>
                     </ul>
+ 
                     <div class="clearfix"></div>
-                  </div>
+
                   <div class="x_content">
                       <canvas id="mybarChart"></canvas>
                   </div>
+                      </div>
                 </div>
               </div>           
-
+<!-- end request bar chart -->
+                  
+       <!--Team Overview-->           
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Paralegals</h2>
+                    <h2>Team Overview</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -320,6 +290,7 @@
                         
                           <th>Name</th>
                           <th>Current Requests</th>
+                        <th>Current Tasks</th>
                           <th>Average Difficulty</th>
                             <th>Average Completion Time</th>
                         </tr>
@@ -329,12 +300,14 @@
 
                           <td>Shawna Rohr</td>
                           <td>45</td>
+                            <td>4</td>
                           <td>3.8</td>
                             <td>12 hours</td>
                         </tr>
                         <tr>
 
                           <td>Mimi Badgerow</td>
+                            <td>0</td>
                           <td>60</td>
                           <td>3.2</td>
                             <td>10 hours</td>
@@ -342,6 +315,7 @@
                         <tr>
 
                           <td>Andrea McGee</td>
+                            <td>0</td>
                           <td>57</td>
                           <td>2.7</td>
                             <td>11.5 hours</td>
@@ -352,15 +326,21 @@
                   </div>
                 </div>
               </div>
-                 
+      <!--End Team Overview-->           
                   
-
-          <br />
-
+                    <div class="clearfix"></div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <p>US Map</p>
+                  <div class="x_panel">
+                      <div class="x_title">
+                        <div id="usa_map" style="height:400px !important;"></div>
+                      </div>
+                      </div>
+                  </div>
+                                    
           <div class="row">
 
-
-            <div class="col-md-6 col-sm-4 col-xs-12">
+            <div class="col-md-5 col-sm-4 col-xs-12">
               <div class="x_panel">
                 <div class="x_title">
                   <h2>Recent Activities</h2>
@@ -447,13 +427,6 @@
               </div>
             </div>
 
-                
-
-                      <div class="col-md-12 col-sm-12 col-xs-12" style="padding: 30px">
-                        <p>USA Vector Map</p>
-                        <div id="usa_map" style="height:400px !important;"></div>
-                      </div>
-
 
               </div>
             </div>
@@ -464,7 +437,7 @@
         <!-- footer content -->
         <footer>
           <div class="pull-right">
-            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+            Copyright 2018 <a href="https://www.walmart.com">Wal-mart Stores, Inc.</a>
           </div>
           <div class="clearfix"></div>
         </footer>
@@ -518,6 +491,6 @@
 
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.js"></script>
-	
+      </div>
   </body>
 </html>

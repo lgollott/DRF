@@ -650,7 +650,7 @@ if (typeof NProgress != 'undefined') {
 					enableZoom: true,
 					showTooltip: true,
 					values: sample_data,
-					scaleColors: ['#E6F2F0', '#149B7E'],
+					scaleColors: ['#E6F2F0', '#ff0000'],
 					normalizeFunction: 'polynomial'
 				});
 			

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>Discovery | </title>
 
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -57,8 +57,6 @@
                       <li><a href="index.html">Manager Dashboard</a></li>
                       <li><a href="index2.html">Paralegal Dashboard</a></li>
                       <li><a href="index3.html">Specialist Dashboard</a></li>
-                        <li><a href="tasks.html">Tasks</a></li>
-                        <li><a href="task_detail.html">Tasks Detail</a></li>
                     </ul>
                   </li>
 !--
@@ -71,6 +69,7 @@
                 </ul>
               </div>
             </div>
+
             <!-- /sidebar menu -->
 
             <!-- /menu footer buttons -->
@@ -194,7 +193,6 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Task Detail</h3>
               </div>
 
               <div class="title_right">
@@ -209,18 +207,11 @@
               </div>
             </div>
             
-            <div class="clearfix"></div>
-
             <div class="row">
               <div class="col-md-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Task</h2>
                     <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"></a>
                         <ul class="dropdown-menu" role="menu">
                           <li><a href="#">Settings 1</a>
                           </li>
@@ -228,19 +219,16 @@
                           </li>
                         </ul>
                       </li>
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
                     </ul>
-                    <div class="clearfix"></div>
                   </div>
 
                   <div class="x_content">
 
-                    <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-12 col-sm-9 col-xs-12">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Tasks 23</h2>
+                    <h2>Recently Completed Requests</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -258,141 +246,134 @@
                     </ul>
                     <div class="clearfix"></div>
                   </div>
+                  <div class="x_content">
+                    <p class="text-muted font-13 m-b-30">
+
+                    </p>
                     <table id="datatable-buttons" class="table table-striped table-bordered">
                       <thead>
                         <tr>
                           <th>Matter Number</th>
-                          <th>Assigned To</th>
-                          <th>Difficulty Rating</th>
-                          <th>Due Date</th>
-                            <th>Completed Date</th>                            
-                            <th>Status</th>
+                          <th>Matter Name</th>
+                          <th>Date Received</th>
+                          <th>Date Completed</th>
+                          <th>Paralegal Assigned</th>
+                            <th>Case Type</th>
+                            <th>Jurisdiction</th>
 
                         </tr>
                       </thead>
+
                       <tbody>
                         <tr>
-                          <td>1234</td>
+                          <td>2018-0000001</td>
+                          <td>Badgerow v. Walmart Stores Inc
+                          </td>
+                          <td>2018-01-31</td>
+                          <td>2018-03-21</td>
                           <td>Mimi Badgerow</td>
-                          <td>2</td>
-                          <td>02.01.2018</td>
-                            <td>02.20.2018</td>
-                          <td>Complete</td>
-                          </tr>
+                          <td>Tort-Other</td>
+                            <td>TX</td>
+                        </tr>
+                        <tr>
+                          <td>2018-0000004</td>
+                          <td>Rohr v. Walmart Stores Inc
+                            </td>
+                          <td>2018-02-02</td>
+                          <td>2018-03-21</td>
+                          <td>Shawna Rohr</td>
+                          <td>Tort-Pharmacy</td>
+                            <td>MO</td>
+                        </tr>
+                        <tr>
+                          <td>2018-0000009</td>
+                          <td>The Man v. Sams Club</td>
+                          <td>2018-02-06</td>
+                          <td>2018-03-22</td>
+                          <td>Beyonce Knowles</td>
+                          <td>Class Action</td>
+                            <td>NY</td>
+                        </tr>
+                        <tr>
+                          <td>2018-0000019</td>
+                          <td>Bugs Bunney v. Looney Tunes</td>
+                          <td>2018-02-09</td>
+                          <td>2018-03-22</td>
+                          <td>Bugs Bunny</td>
+                          <td>Employment</td>
+                            <td>CA</td>
+                        </tr>
+                                                  <tr>
+                          <td>2018-0000023</td>
+                          <td>Malloy v. Wal-mart Stores</td>
+                          <td>2018-02-09</td>
+                          <td>2018-03-24</td>
+                          <td>Bryan Malloy</td>
+                          <td>Commercial</td>
+                            <td>OK</td>
+                        </tr>
+                        <tr>
+                          <td>2018-0000034</td>
+                          <td>McMillon v. Wal-mart Stores</td>
+                          <td>2018-02-15</td>
+                          <td>2018-03-24</td>
+                          <td>Doug McMillon</td>
+                          <td>Tort-Product Liability</td>
+                            <td>AR</td>
+                        </tr>
+                                                  <tr>
+                          <td>2018-0000046</td>
+                          <td>Swiffer v. Sams Club</td>
+                          <td>2018-02-17</td>
+                          <td>2018-03-25</td>
+                          <td>Mimi Badgerow</td>
+                          <td>Tort-Other</td>
+                            <td>AR</td>
+                        </tr>
+                        <tr>
+                          <td>2018-0000049</td>
+                          <td>Blue Moon Beer v. Modelo</td>
+                          <td>2018-02-21</td>
+                          <td>2018-03-25</td>
+                          <td>Shawna Rohr</td>
+                          <td>Tort-Product Liability</td>
+                            <td>FL</td>
+                        </tr>
+                                                  <tr>
+                          <td>2018-0000055</td>
+                          <td>Coyote v. Roadrunner</td>
+                          <td>2018-02-28</td>
+                          <td>2018-03-26</td>
+                          <td>Wiley E. Coyote</td>
+                          <td>Employment</td>
+                            <td>CA</td>
+                        </tr>
+                        <tr>
+                          <td>2018-0000059</td>
+                          <td>Trump v. Cruz</td>
+                          <td>2018-03-01</td>
+                          <td>2018-03-27</td>
+                          <td>Michelle Obama</td>
+                          <td>Class Action</td>
+                            <td>DC</td>
+                        </tr>
+
+
                       </tbody>
                     </table>
                   </div>
                 </div>
-              </div>                 
-                    </div>
+              </div>
+
+
                         <!-- end of user messages -->
-                    <div>
-                        
                         <ul class="messages">
                           <li>
-                            <img src="images/img.jpg" class="avatar" alt="Avatar">
-                            <div class="message_date">
-                              <h3 class="date text-info">02</h3>
-                              <p class="month">Feb</p>
-                            </div>
-                            <div class="message_wrapper">
-                              <h4 class="heading">Shawna Rohr</h4>
-                              <blockquote class="message">Tasks has been assigned to Andrea McGee.</blockquote>
-                              <br />
-
-                            <img src="images/img.jpg" class="avatar" alt="Avatar">
-                            <div class="message_date">
-                              <h3 class="date text-info">09</h3>
-                              <p class="month">Feb</p>
-                            </div>
-                            <div class="message_wrapper">
-                              <h4 class="heading">Shawna Rohr</h4>
-                              <blockquote class="message">Tasks has been reassigned to Mimi Badgerow.</blockquote>
-                            </div>
-                              </div>
-                              
-                          </li>
-
-                        <!-- end of user messages -->
-
-                      </ul>
-                      </div>
-
-
-                    </div>
-
                     <!-- start project-detail sidebar -->
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-
-                      <section class="panel">
-
-                        <div class="x_title">
-                          <h2>Additional Details</h2>
-                          <div class="clearfix"></div>
-                        </div>
-                        <div class="panel-body">
-
-                          <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terr.</p>
-                          <br />
-
-                          <div class="project_detail">
-
-                            <p class="title">Client Company</p>
-                            <p>Deveint Inc</p>
-                            <p class="title">Project Leader</p>
-                            <p>Tony Chicken</p>
-                          </div>
-
-                          <br />
-                          <h5>Project files</h5>
-                          <ul class="list-unstyled project_files">
-                            <li><a href=""><i class="fa fa-file-word-o"></i> Functional-requirements.docx</a>
-                            </li>
-                            <li><a href=""><i class="fa fa-file-pdf-o"></i> UAT.pdf</a>
-                            </li>
-                            <li><a href=""><i class="fa fa-mail-forward"></i> Email-from-flatbal.mln</a>
-                            </li>
-                            <li><a href=""><i class="fa fa-picture-o"></i> Logo.png</a>
-                            </li>
-                            <li><a href=""><i class="fa fa-file-word-o"></i> Contract-10_12_2014.docx</a>
-                            </li>
-                          </ul>
-                          <br />
-
-                          <div class="text-center mtop20">
-                            <a href="#" class="btn btn-sm btn-primary">Add files</a>
-                            <a href="#" class="btn btn-sm btn-primary">Change Status</a>
-                          </div>
-                        </div>
-
-                      </section>
-
-                    </div>
                     <!-- end project-detail sidebar -->
-      <div>
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                        <object width="650" height="1200" data="images/jotform1.pdf"></object>
-              </div>
-          </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <!-- /page content -->
-
-        <!-- footer content -->
-        <footer>
-          <div class="pull-right">
-            Copyright 2018 <a href="https://www.walmart.com">Wal-mart Stores, Inc.</a>
-          </div>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
-
-
-    <!-- jQuery -->
+     <!-- jQuery -->
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
