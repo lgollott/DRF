@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>DRL | </title>
 
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Discovery Request Live</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -56,10 +56,9 @@
                     <ul class="nav child_menu">
                       <li><a href="index.html">Manager Dashboard</a></li>
                       <li><a href="index2.html">Paralegal Dashboard</a></li>
-                      <li><a href="index3.html">Specialist Dashboard</a></li>
+                      <li><a href="index3.html">Legal Analyst Dashboard</a></li>
                     </ul>
                   </li>
-!--
                     <li><a><i class="fa fa-edit"></i> Plug-ins <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                         <li><a href="altep.html">Altep</a></li>
@@ -333,42 +332,85 @@
                         </div>
                         <div class="panel-body">
 
-                          <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terr.</p>
-                          <br />
-
-                          <div class="project_detail">
-
-                            <p class="title">Client Company</p>
-                            <p>Deveint Inc</p>
-                            <p class="title">Project Leader</p>
-                            <p>Tony Chicken</p>
-                          </div>
-
-                          <br />
-                          <h5>Project files</h5>
-                          <ul class="list-unstyled project_files">
-                            <li><a href=""><i class="fa fa-file-word-o"></i> Functional-requirements.docx</a>
-                            </li>
-                            <li><a href=""><i class="fa fa-file-pdf-o"></i> UAT.pdf</a>
-                            </li>
-                            <li><a href=""><i class="fa fa-mail-forward"></i> Email-from-flatbal.mln</a>
-                            </li>
-                            <li><a href=""><i class="fa fa-picture-o"></i> Logo.png</a>
-                            </li>
-                            <li><a href=""><i class="fa fa-file-word-o"></i> Contract-10_12_2014.docx</a>
-                            </li>
-                          </ul>
-                          <br />
-
-                          <div class="text-center mtop20">
-                            <a href="#" class="btn btn-sm btn-primary">Add files</a>
-                            <a href="#" class="btn btn-sm btn-primary">Change Status</a>
-                          </div>
+                    <form id="task-creation-form" data-parsley-validate>
+                      
+                        <label for="assignee">Assigned to:</label>
+                          <select id="assignee" class="form-control" required>
+                            <option value="press">Mimi Badgerow</option>
+                            <option value="net">Shawna Rohr</option>
+                            <option value="mouth">Andrea McGee</option>
+                          </select>
+                        <br>
+                      <div>  
+                    <label for="items">Number of Items:</label>
+                          <font color="black">5</font>
+                        </div>
+                        <br>
+                        <div>
+                        
                         </div>
 
-                      </section>
 
-                    </div>
+                          <label for="priority">Priority Level:</label>
+                          <select id="priority" class="form-control" required>
+                            <option value="normal">Normal</option>
+                            <option value="low">Low</option>
+                            <option value="high">High</option>
+                          </select>
+                        
+                        <label for="status">Status:</label>
+                          <select id="status" class="form-control" required>
+                             <option value="inProgress">In Progress</option>
+                              <option value="">Not Started</option>
+                            <option value="waiting">Waiting on Others</option>
+                              <option value="complete">Complete</option>
+                          </select>
+                        <br>
+                        <div>
+                        <label for="due-date">Due Date:</label>
+                            
+                                    
+                            <span class="fa fa-calendar-o"><font color="black"> 02/01/2018</font></span>
+    
+
+                              </div>                        
+                        <label for="claimzone-number">Claimzone #:</label>
+                      <input type="text" id="items" class="form-control" name="claimzone-number" />              
+                    <label for="claimzone-loss-type">Claimzone Loss Type:</label>
+                      <input type="text" id="items" class="form-control" name="claimzone-loss-type" /> 
+                    
+                    <label for="passport-primary-issue">Passport Primary Issue:</label>
+                      <input type="text" id="passport-primary-issue" class="form-control" name="passport-primary-issue" /> 
+                        
+                        
+                          <label for="items-needed">Description of items needed:</label>
+                          <textarea id="items-needed" required="required" class="form-control" name="items-needed" data-parsley-trigger="keyup" data-parsley-minlength="0" data-parsley-maxlength="500" >1. Print form xyz 
+                            </textarea>
+                        <label for="difficulty-rating">Difficulty Rating:</label>
+                      <input type="number" id="difficulty-rating" class="form-control" name="difficulty-rating" required />
+                        
+                <label for="due-date">Completed Date:</label>
+                        <fieldset>
+                          <div class="control-group">
+                            <div class="controls">
+                              <div class="col-md-6 xdisplay_inputx form-group has-feedback">
+                                <input type="text" class="form-control has-feedback-left" id="single_cal2" placeholder="" aria-describedby="inputSuccess2Status2">
+                                <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+                                <span id="inputSuccess2Status2" class="sr-only">(success)</span>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+
+                          <br/>
+                          <span class="btn btn-primary">Save Changes</span>
+
+                                            </form>
+                          </div>
+                        </section>
+                        </div>
+
+
                     <!-- end project-detail sidebar -->
       <div>
               <div class="col-md-6 col-sm-6 col-xs-12">
